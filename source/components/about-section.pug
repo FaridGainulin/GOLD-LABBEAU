@@ -1,0 +1,86 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      img.about-section__icon-phone(src="images/about-section-icon-phone.png" loading="lazy" width="934" height="868" alt="icon")
+      img.about-section__icon-logo(src="images/about-section-icon-logo.png" loading="lazy" width="174" height="1249" alt="logo")
+      .about-section__box
+        h2.about-section__title.font-w-m-light.font-s-70.text-up Запустите свой
+        .about-section__sub-title.font-w-p-italic.font-s-60.color-gradient beauty-бизнес
+        .about-section__text.font-w-medium.font-s-26 с командой опытных предпринимателей
+      .swiper-bullet
+        .about-section__cards.swiper-wrapper
+          .about-section__card.swiper-slide.about-section__box
+            .about-section__card-title.font-w-regular.color-gold
+              span.font-s-54 20 
+              span.font-s-36 лет
+            .font-s-18
+              | Наша компания уже 20 лет 
+              br
+              | является крупнейшим поставщиком
+              br
+              | косметологического оборудования
+              br
+              | и проф.косметики в России.
+          .about-section__card.swiper-slide
+            .about-section__card-title.font-w-regular.color-gold
+              span.font-s-36 Учебный центр
+            .font-s-18
+              | Кроме этого, у нас есть 
+              br
+              | собственный учебный центр, где 
+              br
+              | мы готовим лучших косметологов и
+              br
+              | способствуем активному развитию
+              br
+              | beauty-индустрии.
+          .about-section__card.swiper-slide
+            .about-section__card-title.font-w-regular.color-gold
+              span.font-s-36 Ресурсы
+            .font-s-18
+              | Используя наши ресурсы, мы 
+              br
+              | поможем вам открыть лучший салон
+              br
+              | косметологии и дадим возможность
+              br
+              | стать лидерами индустрии в вашем
+              br
+              | городе.
+          .about-section__card.swiper-slide
+            .about-section__card-title.font-w-regular.color-gold
+              span.font-s-36 Обучение
+            .font-s-18
+              | Проведем обучение или 
+              br
+              | переподготовку ваших мастеров
+              br
+              | с выдачей диплома гос. образца
+              br
+              | и обеспечим ваш салон 
+              br
+              | оборудованием на спец. условиях.
+          .about-section__card.swiper-slide
+            .about-section__card-title.font-w-regular.color-gold
+              span.font-s-36 Сопровождение
+            .font-s-18
+              | Дадим подробные рекомендации 
+              br
+              | по качественному привлечению 
+              br
+              | клиентов и будем сопровождать 
+              br
+              | вас до и после открытия.
+        .bullet-pagination.bullet-pagination--right
+      .about-section__box
+        .about-section__bottom
+          .about-section__bottom-text.font-w-medium.font-s-20 Задайте любой вопрос о работе франшизы
+          form.about-section__form(data-feedback-form)
+            textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn(type="submit") Задать вопрос
+          .about-section__agree-wrapper
+            include ../components/agree.pug
+      img.about-section__img(src="images/about-section-img.png" loading="lazy" width="1720" height="1558" alt="image")

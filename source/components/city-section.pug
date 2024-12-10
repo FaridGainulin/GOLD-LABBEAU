@@ -1,0 +1,26 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      .city-section__box
+        h2.city-section__title.font-w-m-light.font-s-70.text-up
+          | Станьте частью 
+          br.no-br
+          | команды
+        .city-section__sub-title
+          span.font-w-p-italic.font-s-60.text-up.color-gradient «GOLD LABBEAU»
+        .font-w-medium.font-s-32
+          | и зарабатывайте 
+          span.color-gold
+            | от 232 000 рублей 
+            br.no-br
+            | ежемесячно
+        .city-section__text.font-w-regular.font-s-18 Проверьте, свободен ли ваш город для работы с нами
+        form.city-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Проверить
+          .city-section__agree-wrapper
+            include ../components/agree.pug
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1922" height="1524" alt="image")
+      include ../components/footer.pug

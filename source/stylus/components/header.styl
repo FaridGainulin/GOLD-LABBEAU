@@ -1,0 +1,62 @@
+.header
+  &__container
+    display: flex
+    justify-content space-between
+    align-items: center
+    padding-bottom 10px
+    border-bottom: 1px solid rgba(195, 172, 128, 0.5)
+    +above($breakpoints.sm)
+      padding-bottom 20px
+    +above($breakpoints.md)
+      padding-bottom 30px
+    +above($breakpoints.xxl)
+      padding-bottom 35px
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      flex-basis: 40%
+      display: flex
+      flex-direction: column
+      gap: 6px
+
+  &__logo
+    width 110px
+    height: auto
+    +above($breakpoints.sm)
+      width 180px
+    +above($breakpoints.md)
+      width 240px
+    +above($breakpoints.xxl)
+      width 285px
+
+  &__connection
+    display: flex
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      flex-basis: 40%
+      justify-content flex-end
+      gap: 7px;
+    +above($breakpoints.md)
+      gap: 8px;
+    +above($breakpoints.xxl)
+      gap: 9px
+
+  &__connection-icon
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      width 10px
+      height: 10px
+    +above($breakpoints.md)
+      width 11px
+      height: 11px
+    +above($breakpoints.xxl)
+      width 12px
+      height: 12px
+
+  // &__call-me
+  //   display: none
+  //   +above($breakpoints.sm)
+  //     display: flex

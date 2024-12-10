@@ -1,0 +1,31 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title
+        span.font-w-m-light.font-s-90.text-up Откройте салон
+        br
+        span.font-w-p-italic.font-s-60.color-gradient аппаратной косметологии
+        br
+      .main-section__title-inner.font-w-medium.font-s-32
+        | с чистой прибылью 
+        span.color-gold от 2,8 млн рублей в год
+      .main-section__sub-title
+        img.main-section__sub-title-icon(src="images/main-section-sub-title-icon.svg" loading="lazy" width="56" height="56" alt="icon")
+        span.font-w-regular.font-s-20
+          | Начните бизнес по франшизе 
+          span.font-w-medium.color-gold «GOLD LABBEAU» 
+          br.no-br
+          | от экспертов с 20-ти летним опытом в этой индустрии
+      .main-section__text.font-w-regular.font-s-18
+        | Получите подробную презентацию франшизы и узнайте 
+        br.no-br
+        | об условиях сотрудничества
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Получить
+        .main-section__agree-wrapper
+          include ../components/agree.pug
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1348" height="1572" alt="image")

@@ -1,0 +1,11 @@
+header.header
+  .header__container
+    .header__brand
+      .font-w-medium.font-s-18-a «GOLD LABBEAU»
+      .font-s-16-a Франшиза салона аппаратной косметологии
+    img.header__logo(src="images/logo.png" loading="lazy" width="570" height="60" alt="logo")
+    .header__connection
+      a(href="tel:+79999999999")
+        img.header__connection-icon(src="images/connection-icon.svg" loading="lazy" width="12" height="12" alt="icon")
+      include ../components/phone-number.pug
+      .header__call-me.btn.btn--call-me(data-remodal-target="modal-form-call-me") Заказать звонок

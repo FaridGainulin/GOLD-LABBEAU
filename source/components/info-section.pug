@@ -1,0 +1,46 @@
+section.info-section
+  .wrapper
+    .info-section__container
+      h2.info-section__title.font-w-m-light.font-s-70.text-up
+        | Погрузитесь в работу
+      .info-section__sub-title
+        span.font-w-p-italic.font-s-60.color-gradient бизнеса
+      .info-section__text.font-w-medium.font-s-26 Оставьте заявку на консультацию, где мы расскажем вам:
+      .swiper-bullet
+        .info-section__cards.swiper-wrapper
+          .info-section__card.swiper-slide
+            img.info-section__card-icon(src="images/info-section-card-icon-1.svg" loading="lazy" width="56" height="56" alt="icon")
+            .font-s-18 Из чего состоит ежедневная <br> работа владельца салона
+          .info-section__card.swiper-slide
+            img.info-section__card-icon(src="images/info-section-card-icon-2.svg" loading="lazy" width="56" height="56" alt="icon")
+            .font-s-18 Какие услуги пользуются <br> наибольшим спросом
+          .info-section__card.swiper-slide
+            img.info-section__card-icon(src="images/info-section-card-icon-3.svg" loading="lazy" width="56" height="56" alt="icon")
+            .font-s-18 Кто ваша целевая аудитория <br> и как ее привлечь
+          .info-section__card.swiper-slide
+            img.info-section__card-icon(src="images/info-section-card-icon-4.svg" loading="lazy" width="56" height="56" alt="icon")
+            .font-s-18 Какие маркетинговые <br> инструменты работают
+          .info-section__card.swiper-slide
+            img.info-section__card-icon(src="images/info-section-card-icon-5.svg" loading="lazy" width="56" height="56" alt="icon")
+            .font-s-18 На что обращать внимание <br> при ценообразовании
+          .info-section__card.swiper-slide
+            img.info-section__card-icon(src="images/info-section-card-icon-6.svg" loading="lazy" width="56" height="56" alt="icon")
+            .font-s-18 Что будет входить в ваши <br> стартовые инвестиции
+          .info-section__card.swiper-slide
+            img.info-section__card-icon(src="images/info-section-card-icon-7.svg" loading="lazy" width="56" height="56" alt="icon")
+            .font-s-18 Как правильно позиционировать <br> себя на рынке
+          .info-section__card.swiper-slide
+            img.info-section__card-icon(src="images/info-section-card-icon-8.svg" loading="lazy" width="56" height="56" alt="icon")
+            .font-s-18 Как быстро вы выйдете <br> на чистую прибыль
+        .bullet-pagination.bullet-pagination--left
+      .info-section__bottom
+        .info-section__bottom-title.font-w-medium.font-s-24 Оставьте заявку на консультацию
+        form.info-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Оставить заявку
+        .info-section__agree-wrapper
+          include ../components/agree.pug
+      img.info-section__img(src="images/info-section-img.png" loading="lazy" width="1082" height="1067" alt="image")
+      img.info-section__icon(src="images/info-section-icon.svg" loading="lazy" width="182" height="178" alt="icon")

@@ -1,0 +1,50 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="1300" height="1044" alt="image")
+      img.finances-section__icon-arrow(src="images/finances-section-icon-arrow.svg" loading="lazy" width="101" height="94" alt="icon")
+      h2.finances-section__title.font-w-m-light.font-s-70.text-up Ключевые показатели
+      .finances-section__sub-title
+        span.font-w-p-italic.font-s-60.color-gradient франшизы,
+      .finances-section__text.font-w-medium.font-s-26
+        | на которые вы можете рассчитывать, открыв 
+        br.no-br
+        | бизнес по франшизе 
+        span.color-gold «GOLD LABBEAU»
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card-wrapper.swiper-slide
+            .finances-section__card
+                .font-w-medium.font-s-36.color-gold 496 000 ₽
+                .font-s-18 ежемесячная выручка
+          .finances-section__card-wrapper.swiper-slide
+            .finances-section__card
+                .font-w-medium.font-s-36.color-gold с 1-го месяца
+                .font-s-18 вы начнете зарабатывать
+          .finances-section__card-wrapper.swiper-slide
+            .finances-section__card
+                .font-w-medium.font-s-36.color-gold 232 000 ₽
+                .font-s-18 ежемесячная чистая <br> прибыль
+          .finances-section__card-wrapper.swiper-slide
+            .finances-section__card
+                .font-w-medium.font-s-36.color-gold 56 дней
+                .font-s-18 для запуска бизнеса
+          .finances-section__card-wrapper.swiper-slide
+            .finances-section__card
+                .font-w-medium.font-s-36.color-gold 46,9%
+                .font-s-18 рентабельность <br> по чистой прибыли
+          .finances-section__card-wrapper.swiper-slide
+            .finances-section__card
+                .font-w-medium.font-s-36.color-gold 12 месяцев
+                .font-s-18 срок окупаемости <br> бизнеса
+        .bullet-pagination.bullet-pagination--left
+      .finances-section__bottom
+        .finances-section__bottom-title.font-w-medium.font-s-24 Узнайте, какие инвестиции потребуются для старта
+        .finances-section__bottom-text.font-w-regular.font-s-18 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug
